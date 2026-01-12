@@ -1,0 +1,1 @@
+idf_component_register(SRCS "Waveshare_ST7262_LVGL.c" INCLUDE_DIRS "." REQUIRES lvgl driver esp_lcd)

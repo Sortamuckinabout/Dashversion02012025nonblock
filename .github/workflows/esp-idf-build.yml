@@ -1,0 +1,33 @@
+name: ESP-IDF build
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Setup ESP-IDF
+        uses: EspressifSystems/esp-idf-action@v2
+        with:
+          version: 'latest'
+
+      - name: Set target
+        run: |
+          idf.py set-target esp32
+
+      - name: Build
+        run: |
+          idf.py build
