@@ -8,8 +8,8 @@ Follow these steps to set up ESP-IDF and build locally on Windows (PowerShell):
 
 2) Install ESP-IDF
    - Open PowerShell as Administrator
-   - Clone ESP-IDF (pick a stable release or `release/v5.x`):
-     git clone --recursive https://github.com/espressif/esp-idf.git
+   - Clone ESP-IDF (pick a stable release or `release/v5.x`):https://github.com/espressif/esp-idf.git
+     git clone --recursive 
      cd esp-idf
    - Run the installer script:
      ./install.ps1

@@ -1,4 +1,5 @@
-#include <Preferences.h>
+// NOTE: This Arduino sketch was converted to ESP-IDF (see dash_legacy.c and main.cpp). Keep as reference only.
+// #include <Preferences.h>
 #include <Waveshare_ST7262_LVGL.h>
 #include <lvgl.h>
 #include <lv_conf.h>
