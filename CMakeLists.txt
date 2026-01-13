@@ -1,6 +1,3 @@
-cmake_minimum_required(VERSION 3.16)
-include($ENV{IDF_PATH}/tools/cmake/project.cmake)
-project(Dashversion02012025nonblock)
 
 # Component sources (include main app and UI assets)
 set(SOURCES
@@ -17,3 +14,8 @@ set(SOURCES
 
 # Require IDF components used by the project
 idf_component_register(SRCS ${SOURCES} INCLUDE_DIRS "." REQUIRES lvgl driver nvs_flash)
+
+
+
+idf_component_register(SRCS "main.cpp" INCLUDE_DIRS "." REQUIRES lvgl waveshare_st7262 driver esp_lcd)cmake_minimum_required(VERSION 3.16)
+
