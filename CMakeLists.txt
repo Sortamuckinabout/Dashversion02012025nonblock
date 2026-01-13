@@ -4,7 +4,7 @@ project(Dashversion02012025nonblock)
 
 # Component sources (include main app and UI assets)
 set(SOURCES
-    main.cpp
+    project_description.json
     dash_legacy.c
     ui_MTS1200s.c
     ui.c

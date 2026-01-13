@@ -1,0 +1,30 @@
+{
+  "name": "Dashversion02012025nonblock",
+  "description": "ESP-IDF port of the CAN + LVGL dashboard (converted from Arduino sketch).",
+  "entry_point": "main.cpp",
+  "project_type": "esp-idf-component",
+  "idf_version": "v5.x",
+  "target": "esp32",
+  "components": [
+    "lvgl",
+    "driver",
+    "nvs_flash"
+  ],
+  "sources": [
+    "main.cpp",
+    "dash_legacy.c",
+    "ui_MTS1200s.c",
+    "ui.c",
+    "ui_comp_hook.c",
+    "ui_helpers.c",
+    "ui_events.cpp",
+    "ui_img_1477404486.c",
+    "ui_img_90875330.c",
+    "fonts/ui_font_Ariallarge.c"
+  ],
+  "build": {
+    "system": "cmake",
+    "cmake_minimum_required": "3.16"
+  },
+  "created": "2026-01-13"
+}
